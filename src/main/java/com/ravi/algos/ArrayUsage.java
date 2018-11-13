@@ -59,4 +59,23 @@ public class ArrayUsage {
         }
 
     }
+
+    private int binarySearch(int[] arr,int eleToFind,int start,int end){
+        for(int i=0;i<arr.length;i++){
+            if(eleToFind>arr[(end/2)]){
+                System.out.println("Greater");
+                binarySearch(arr,eleToFind,start,end/2);
+            }else if(eleToFind<arr[(end/2)]){
+                System.out.println("Lesser");
+                binarySearch(arr,eleToFind,start/2,end);
+            }else if(eleToFind==arr[(end/2)]){
+                System.out.println("Equals");
+                return end/2;
+            }else {
+                return -1;
+            }
+        }
+
+        return -1;
+    }
 }
