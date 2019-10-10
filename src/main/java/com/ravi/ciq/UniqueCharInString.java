@@ -1,5 +1,7 @@
 package com.ravi.ciq;
 
+import java.util.Hashtable;
+
 public class UniqueCharInString {
 
     public static void main(String[] args) {
